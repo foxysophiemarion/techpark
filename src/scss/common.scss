@@ -1,0 +1,19 @@
+// Заголовки, общие БЄМ блоки и прочее...
+.title {
+	font-weight: 900;
+	color: #fff;
+	@include adaptiveValue("font-size", 27, 20);
+}
+.body-line {
+	max-width: toRem(1260);
+	margin: 0 auto;
+	color: #fff;
+	background-color: $colorBgc;
+
+	display: flex;
+	align-items: center;
+	border-radius: toRem(50);
+	padding: toRem(18) 0;
+	@include adaptiveValue("padding-right", 45, 20);
+	@include adaptiveValue("padding-left", 45, 20);
+}

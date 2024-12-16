@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__top top">
+				<!-- Оболочка слайдера -->
+				<div class="top__slider swiper">
+					<button type="button" class="swiper-button-prev _icon-arrow"></button>
+					<!-- Движущаяся часть слайдера -->
+					<div class="top__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="top__slide swiper-slide">
+							<div class="slide-top__body">
+								<div class="slide-top__image"><img src="@img/slider/01@3x.png" alt="Image"></div>
+								<div class="slide-top__content">
+									<h2 class="slide-top__title">Откройте для себя лучшее в мире техники с Технопарком!</h2>
+									<a data-goto=".catalog" href="" class="slide-top__button">ПЕРЕЙТИ В КАТАЛОГ</a>
+								</div>
+							</div>
+						</div>
+						<div class="top__slide swiper-slide">
+							<div class="slide-top__body">
+								<div class="slide-top__image"><img src="@img/slider/02.jpg" alt="Image"></div>
+								<div class="slide-top__content">
+									<h2 class="slide-top__title">Технопарк: качество, которому можно доверять!</h2>
+									<a data-goto=".catalog" href="" class="slide-top__button">ПЕРЕЙТИ В КАТАЛОГ</a>
+								</div>
+							</div>
+						</div>
+						<div class="top__slide swiper-slide">
+							<div class="slide-top__body">
+								<div class="slide-top__image"><img src="@img/slider/01@3x.png" alt="Image"></div>
+								<div class="slide-top__content">
+									<h2 class="slide-top__title">Премиум-техника для Вас в Технопарке!</h2>
+									<a data-goto=".catalog" href="" class="slide-top__button">ПЕРЕЙТИ В КАТАЛОГ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="swiper-button-next _icon-arrow"></button>
+				</div>
+			</section>
+			<section class="page__catalog catalog">
+				<div class="catalog__container">
+					<h2 class="catalog__title title">КАТАЛОГ</h2>
+					<div data-tabs class="catatlog__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">Iphone</button>
+							<button type="button" class="tabs__title">Mac</button>
+							<button type="button" class="tabs__title">IPad</button>
+							<button type="button" class="tabs__title">Watch</button>
+							<button type="button" class="tabs__title">AirPods</button>
+							<button type="button" class="tabs__title">Dyson</button>
+							<button type="button" class="tabs__title">Sony</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div data-showmore class="tabs__showmore showmore">
+									<div data-showmore-content class="showmore__content">
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Pro Max 512 GB Natural Titanium</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 256 GB Green</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+									</div>
+									<button hidden data-showmore-button type="button" class="showmore__more"><span>Показать
+											еще</span><span>Скрыть</span></button>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div data-showmore class="tabs__showmore showmore">
+									<div data-showmore-content class="showmore__content">
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Pro Max 512 GB Natural Titanium</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 256 GB Green</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+									</div>
+									<button hidden data-showmore-button type="button" class="showmore__more"><span>Показать
+											еще</span><span>Скрыть</span></button>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div data-showmore class="tabs__showmore showmore">
+									<div data-showmore-content class="showmore__content">
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Pro Max 512 GB Natural Titanium</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 256 GB Green</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+									</div>
+									<button hidden data-showmore-button type="button" class="showmore__more"><span>Показать
+											еще</span><span>Скрыть</span></button>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div data-showmore class="tabs__showmore showmore">
+									<div data-showmore-content class="showmore__content">
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Pro Max 512 GB Natural Titanium</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 256 GB Green</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+									</div>
+									<button hidden data-showmore-button type="button" class="showmore__more"><span>Показать
+											еще</span><span>Скрыть</span></button>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div data-showmore class="tabs__showmore showmore">
+									<div data-showmore-content class="showmore__content">
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Pro Max 512 GB Natural Titanium</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 256 GB Green</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+									</div>
+									<button hidden data-showmore-button type="button" class="showmore__more"><span>Показать
+											еще</span><span>Скрыть</span></button>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div data-showmore class="tabs__showmore showmore">
+									<div data-showmore-content class="showmore__content">
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Pro Max 512 GB Natural Titanium</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 256 GB Green</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="tel:+79259199464" class="card-showmore__button">Заказать</a>
+										</div>
+									</div>
+									<button hidden data-showmore-button type="button" class="showmore__more"><span>Показать
+											еще</span><span>Скрыть</span></button>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div data-showmore class="tabs__showmore showmore">
+									<div data-showmore-content class="showmore__content">
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Pro Max 512 GB Natural Titanium</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 256 GB Green</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/65@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/68@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+										<div class="showmore__card card-showmore">
+											<div class="card-showmore__image"><img src="@img/catalog/69@3x.png" alt="Image"></div>
+											<div class="card-showmore__title">Apple iPhone 15 Plus 256 GB Pink</div>
+											<div class="card-showmore__text">Для оформления заказа и уточнения актуальной цены,
+												свяжитесь с нашим менеджером</div>
+											<a href="" class="card-showmore__button">Заказать</a>
+										</div>
+									</div>
+									<button hidden data-showmore-button type="button" class="showmore__more"><span>Показать
+											еще</span><span>Скрыть</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Оболочка слайдера -->
+					<div class="catalog__body">
+
+						<div class="catalog__slider swiper">
+							<!-- Движущаяся часть слайдера -->
+							<div class="catalog__wrapper swiper-wrapper ">
+								<!-- Слайд -->
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/01.png" alt="Image"></div>
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/02.png" alt="Image"></div>
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/03.png" alt="Image"></div>
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/04.png" alt="Image"></div>
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/05.png" alt="Image"></div>
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/01.png" alt="Image"></div>
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/02.png" alt="Image"></div>
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/03.png" alt="Image"></div>
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/04.png" alt="Image"></div>
+								<div class="catalog__slide swiper-slide"><img src="@img/brends/05.png" alt="Image"></div>
+							</div>
+							<div class="catalog__btns">
+								<button type="button" class="swiper-prev _icon-arrow"></button>
+								<button type="button" class="swiper-next _icon-arrow"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<h2 class="about__title">ДОБРО ПОЖАЛОВАТЬ В ООО "ТЕХНОПАРК"!</h2>
+					<div class="about__text">У нас вы найдете продукцию Apple и премиум-технику от брендов Samsung, Xiaomi,
+						Dyson, JBL, Huawei и многих других. Наши консультанты помогут вам с выбором, а постоянные клиенты
+						могут воспользоваться скидками и акциями при покупке нескольких товаров.
+						Ждем вас в нашем магазине!</div>
+				</div>
+				<div class="about__feedback feedback-about">
+					<div class="feedback-about__container">
+						<div class="feedback-about__body">
+							<div class="feedback-about__title">Связаться с нами просто.</div>
+							<a href="tel:+79259199464" class="feedback-about__link _icon-phone">Бесплатный звонок
+								по всей России</a>
+							<a href="tel:+79259199464" class="feedback-about__link _icon-whatsapp">Начните общение
+								по WhatsApp</a>
+							<a href="mailto:Tehnopark39@bk.ru" class="feedback-about__link _icon-mail">Напишите нам
+								на почту Tehnopark39@bk.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="about__bottom bottom-about">
+					<div class="about__container">
+						<div class="bottom-about__text">"ТЕХНОПАРК" — ТЕХНОЛОГИИ, КОТОРЫЕ РАБОТАЮТ НА ВАС!</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__news news">
+				<div class="news__container">
+					<h2 class="news__title title">НОВОСТИ</h2>
+					<div class="news__body">
+						<div class="news__item item-news">
+							<div class="item-news__image"><img src="@img/news/85@3x.png" alt="Image"></div>
+							<div class="item-news__icon _icon-arrow-dig"></div>
+							<div class="item-news__title">Our DNA</div>
+							<div class="item-news__subtitle">Efficiency: it's in our DNA.</div>
+							<div class="item-news__button"><a href="">Читать полностью</a></div>
+						</div>
+						<div class="news__item item-news">
+							<div class="item-news__image"><img src="@img/news/86@3x.png" alt="Image"></div>
+							<div class="item-news__icon _icon-arrow-dig"></div>
+							<div class="item-news__title">Our DNA</div>
+							<div class="item-news__subtitle">Efficiency: it's in our DNA.</div>
+							<div class="item-news__button"><a href="">Читать полностью</a></div>
+						</div>
+						<div class="news__item item-news">
+							<div class="item-news__image"><img src="@img/news/87@3x.png" alt="Image"></div>
+							<div class="item-news__icon _icon-arrow-dig"></div>
+							<div class="item-news__title">Our DNA</div>
+							<div class="item-news__subtitle">Efficiency: it's in our DNA.</div>
+							<div class="item-news__button"><a href="">Читать полностью</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+</html>

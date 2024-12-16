@@ -1,0 +1,35 @@
+.tabs {
+	// .tabs__navigation
+	&__navigation {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(toRem(220), 1fr));
+		gap: toRem(10);
+		justify-items: center;
+		margin-bottom: toRem(70);
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+		}
+	}
+	// .tabs__title
+	&__title {
+		padding: toRem(18) toRem(15);
+		border-radius: toRem(8);
+		width: 100%;
+		max-width: toRem(240);
+		background-color: #fff;
+		color: #000;
+		display: block;
+		&._tab-active {
+			background-color: #000;
+			color: #fff;
+		}
+	}
+	// .tabs__content
+	&__content {
+	}
+	// .tabs__body
+	&__body {
+	}
+	&__showmore {
+	}
+}

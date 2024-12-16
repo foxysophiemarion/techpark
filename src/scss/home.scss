@@ -1,0 +1,422 @@
+//====================================================================================================
+.page {
+	&__top {
+	}
+	.catalog {
+		background: url("@img/catalog/bg.png") 0 0 / cover no-repeat;
+		@include adaptiveValue("padding-top", 60, 50);
+		@include adaptiveValue("padding-bottom", 170, 100);
+	}
+	&__about {
+		@include adaptiveValue("padding-top", 60, 50);
+	}
+	&__news {
+		background: url("@img/news/bg@3x.png") 0 0 / cover no-repeat;
+		@include adaptiveValue("padding-top", 95, 50);
+		@include adaptiveValue("padding-bottom", 320, 150);
+	}
+}
+.top {
+	&__slider {
+		position: relative;
+		@include adaptiveValue("padding-top", 230, 100);
+		@include adaptiveValue("padding-bottom", 160, 50);
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__slide {
+	}
+}
+
+.slide-top {
+	&__body {
+		position: relative;
+		padding: 0 toRem(80);
+		display: flex;
+		gap: toRem(60);
+		align-items: center;
+		justify-content: center;
+		min-height: 100%;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			min-height: 100%;
+			text-align: center;
+			padding: 0 toRem(55);
+		}
+	}
+
+	&__image {
+		flex: 0 1 50%;
+		position: relative;
+		text-align: right;
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+		}
+		img {
+			width: 100%;
+			max-width: toRem(655);
+			@media (max-width: $mobile) {
+				max-width: toRem(555);
+			}
+		}
+	}
+
+	&__content {
+		flex: 0 1 50%;
+		line-height: 1.5;
+		@media (max-width: $mobile) {
+			line-height: 1.2;
+		}
+	}
+
+	&__title {
+		font-weight: 900;
+		color: #7c7a75;
+		@include adaptiveValue("font-size", 43, 20);
+		@include adaptiveValue("margin-bottom", 75, 10);
+	}
+
+	&__text {
+		flex: 1 1 auto;
+
+		color: #7c7a75;
+		@include adaptiveValue("font-size", 30, 18);
+		@include adaptiveValue("margin-bottom", 190, 10);
+		@media (max-width: $mobile) {
+			margin-bottom: toRem(30);
+		}
+	}
+
+	&__button {
+		color: #fff;
+		max-width: toRem(265);
+		text-align: center;
+		padding: toRem(18) toRem(35);
+		background-color: $colorBgc;
+		border-radius: toRem(12);
+		transition: box-shadow 0.3s;
+		@include adaptiveValue("font-size", 19, 14);
+		&:hover {
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+		}
+		@media (max-width: $mobile) {
+			padding: toRem(15) toRem(25);
+		}
+	}
+}
+.swiper-button-prev,
+.swiper-button-next {
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	height: 100%;
+	&::before {
+		color: #7c7a75;
+		@include adaptiveValue("font-size", 55, 32);
+	}
+}
+.swiper-button-next {
+	right: 2%;
+}
+.swiper-button-prev {
+	left: 2%;
+	transform: rotate(180deg);
+}
+//========================================================================================================================================================
+
+.catalog {
+	&__container {
+	}
+
+	&__title {
+		@include adaptiveValue("margin-bottom", 50, 40);
+	}
+	&__slider {
+		max-width: toRem(1460);
+		margin: 0 auto;
+		@include adaptiveValue("padding-top", 80, 50);
+	}
+
+	&__wrapper {
+	}
+
+	&__slide {
+		background-color: #fff;
+		border-radius: toRem(12);
+		width: toRem(260);
+		height: toRem(260);
+		padding: 0 toRem(35);
+		display: flex;
+		align-items: center;
+
+		img {
+			width: 100%;
+		}
+	}
+	&__body {
+		position: relative;
+	}
+	&__btns {
+		max-width: toRem(250);
+		display: flex;
+		justify-content: space-between;
+		margin: toRem(30) auto auto;
+		@media (max-width: $mobile) {
+			max-width: toRem(150);
+		}
+	}
+}
+
+.showmore {
+	&__content {
+		max-width: toRem(1460);
+		margin: 0 auto;
+		display: grid;
+		column-gap: toRem(16);
+		row-gap: toRem(40);
+		grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+	}
+
+	&__card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: toRem(375);
+		background-color: #fff;
+		border-radius: toRem(12);
+		text-align: center;
+		padding: toRem(30) toRem(9) toRem(16);
+	}
+
+	&__more {
+	}
+}
+.card-showmore {
+	&__image {
+		margin-bottom: toRem(25);
+		img {
+			height: toRem(142);
+			max-width: toRem(120);
+		}
+	}
+
+	&__title {
+		flex: 1 1 auto;
+		font-size: toRem(16);
+		margin-bottom: toRem(30);
+	}
+
+	&__text {
+		margin-bottom: toRem(20);
+		font-size: toRem(12);
+	}
+
+	&__button {
+		max-width: toRem(310);
+		margin: 0 auto;
+		font-size: toRem(18);
+		padding: toRem(11) toRem(18);
+		background-color: #e5e5e5;
+		border: 2px solid #7c7a75;
+		border-radius: toRem(8);
+		transition: box-shadow 0.2s ease-in-out;
+		&:hover {
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+	}
+}
+
+.swiper-prev,
+.swiper-next {
+	position: absolute;
+	height: 100%;
+	z-index: 2;
+	top: 0;
+	@media (max-width: toEm(1590)) {
+		position: static;
+	}
+	&::before {
+		color: #fff;
+		@include adaptiveValue("font-size", 55, 32);
+	}
+}
+.swiper-prev {
+	left: 0;
+	&::before {
+		transform: rotate(180deg);
+	}
+}
+.swiper-next {
+	right: 0;
+}
+//========================================================================================================================================================
+
+.about {
+	color: #7c7a75;
+	&__container {
+		text-align: center;
+	}
+
+	&__title {
+		font-weight: 900;
+		@include adaptiveValue("font-size", 45, 24);
+		@include adaptiveValue("margin-bottom", 60, 30);
+	}
+
+	&__text {
+		max-width: toRem(840);
+		margin: 0 auto;
+		line-height: math.div(48, 30);
+		@include adaptiveValue("font-size", 30, 18);
+		@include adaptiveValue("padding-bottom", 95, 30);
+	}
+	&__feedback {
+	}
+
+	&__bottom {
+		@include adaptiveValue("padding-top", 60, 30);
+		@include adaptiveValue("padding-bottom", 60, 30);
+	}
+}
+
+.feedback-about {
+	color: #fff;
+	background-color: $colorBgc;
+	@include adaptiveValue("padding-top", 130, 50);
+	@include adaptiveValue("padding-bottom", 130, 50);
+	&__container {
+		max-width: toRem(1460);
+	}
+	&__body {
+		display: flex;
+		gap: toRem(40);
+	}
+	&__title {
+		flex: 0 1 33.333%;
+		@include adaptiveValue("font-size", 31, 20);
+	}
+
+	&__link {
+		flex: 0 1 25%;
+		display: flex;
+		gap: toRem(30);
+		@include adaptiveValue("font-size", 19, 16);
+		&::before {
+			transition: color 0.3s;
+			font-size: toRem(32);
+		}
+		&:hover::before {
+			color: #6356fd;
+		}
+	}
+}
+
+.bottom-about {
+	&__text {
+		font-weight: 900;
+		@include adaptiveValue("font-size", 32, 24);
+	}
+}
+//========================================================================================================================================================
+
+.news {
+	&__container {
+	}
+
+	&__title {
+		@include adaptiveValue("margin-bottom", 70, 50);
+	}
+
+	&__body {
+		max-width: toRem(1460);
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+		gap: toRem(15);
+		justify-items: center;
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+}
+
+.item-news {
+	max-width: toRem(395);
+	border-radius: toRem(12);
+	overflow: hidden;
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #000;
+	&__image {
+		border-radius: toRem(12);
+		overflow: hidden;
+		margin-bottom: toRem(25);
+
+		img {
+			width: 100%;
+			@media (max-width: $mobileSmall) {
+				max-width: toRem(300);
+			}
+		}
+	}
+
+	&__icon {
+		padding: 0 toRem(40);
+		margin-bottom: toRem(35);
+		align-self: flex-end;
+		&::before {
+			transform: rotate(-45deg);
+		}
+		@media (max-width: $tablet) {
+			padding: 0 toRem(20);
+		}
+	}
+
+	&__title {
+		padding: 0 toRem(40);
+		flex: 1 1 auto;
+		margin-bottom: toRem(15);
+		font-size: toRem(21);
+		font-weight: 900;
+		@media (max-width: $tablet) {
+			padding: 0 toRem(20);
+		}
+	}
+
+	&__subtitle {
+		font-size: toRem(21);
+		padding: 0 toRem(40);
+		margin-bottom: toRem(50);
+		@media (max-width: $tablet) {
+			padding: 0 toRem(20);
+		}
+	}
+
+	&__button {
+		padding: 0 toRem(40) toRem(40);
+		@media (max-width: $tablet) {
+			padding: 0 toRem(20) toRem(20);
+		}
+		a {
+			width: 100%;
+			padding: toRem(12) 0;
+			text-align: center;
+			color: #000;
+			background-color: #fff;
+			border-radius: toRem(8);
+			transition: box-shadow 0.3s;
+			&:hover {
+				box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+			}
+		}
+	}
+}

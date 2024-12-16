@@ -1,0 +1,30 @@
+[data-showmore] {
+}
+[data-showmore-content] {
+}
+[data-showmore-button] {
+	color: #fff;
+	display: block;
+	background-color: $colorBgc;
+	padding: toRem(15) toRem(50);
+	border-radius: toRem(8);
+	margin: toRem(80) auto 0 auto;
+	transition: box-shadow 0.2s ease-in-out;
+	@media (max-width: $mobile) {
+		margin: toRem(30) auto 0 auto;
+	}
+	&:hover {
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	}
+	span {
+		&:last-child {
+			display: none;
+		}
+		._showmore-active & {
+			display: none;
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+}
